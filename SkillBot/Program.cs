@@ -10,6 +10,12 @@ namespace SkillBot
     {
         static void Main(string[] args)
         {
+            Weather ryazanWeather = new Weather();
+            TgBot weatherBot = new TgBot();
+
+           Console.WriteLine(ryazanWeather.GetTemperature("Рязань"));
+            Console.WriteLine(weatherBot.GetMe());
+            Console.ReadKey();
         }
     }
 }
